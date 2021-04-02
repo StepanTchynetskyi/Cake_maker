@@ -1,0 +1,31 @@
+{
+  "expo": {
+    "name": "Cakes",
+    "slug": "Cakes",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/mainImg.jpg",
+    "splash": {
+      "image": "./assets/mainImg.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/mainImg.jpg",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.android.cakes"
+    },
+    "web": {
+      "favicon": "./assets/mainImg.jpg"
+    }
+  }
+}
