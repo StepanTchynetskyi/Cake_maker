@@ -8,6 +8,7 @@ import MainMenu from "./components/MainMenu";
 import Register from "./components/Register";
 import ChooseOne from "./components/ChooseOne";
 import ResultPage from "./components/ResultPage";
+import CompleteOrder from "./components/CompleteOrder";
 import firebase from "firebase";
 const Stack = createStackNavigator();
 
@@ -30,6 +31,11 @@ export default function App() {
         <Stack.Screen
           name="ResultPage"
           component={ResultPage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="CompleteOrder"
+          component={CompleteOrder}
           options={{ headerShown: false }}
         />
         <Stack.Screen name="Register" component={Register} />

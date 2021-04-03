@@ -177,7 +177,7 @@ const ResultPage = ({ navigation }) => {
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <TouchableOpacity
           style={styles.logbtn}
-          onPress={() => navigation.navigate("ResultPage")}
+          onPress={() => navigation.navigate("CompleteOrder")}
         >
           <Text style={{ color: "#fff", fontSize: 20 }}>Confirm</Text>
         </TouchableOpacity>
