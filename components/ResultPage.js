@@ -164,14 +164,20 @@ const ResultPage = ({ navigation }) => {
         >
           Price: 5600
         </Text>
-        <View style={[styles.circle, { marginLeft: 40 }]}>
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>-</Text>
+        <View
+          style={[styles.circle, { marginLeft: 40, backgroundColor: "#000" }]}
+        >
+          <Text style={{ fontSize: 40, color: "#fff", marginBottom: 4 }}>
+            -
+          </Text>
         </View>
         <Text style={{ fontSize: 20, marginLeft: 20, color: "#BDBDBD" }}>
-          2
+          1
         </Text>
-        <View style={styles.circle}>
-          <Text style={{ fontSize: 16, color: "#BDBDBD" }}>+</Text>
+        <View style={[styles.circle, { backgroundColor: "#000" }]}>
+          <Text style={{ fontSize: 32, color: "#fff", marginBottom: 4 }}>
+            +
+          </Text>
         </View>
       </View>
       <View style={{ alignItems: "center", justifyContent: "center" }}>
@@ -201,6 +207,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginLeft: 20,
+    textAlign: "center",
   },
   smallImg: {
     height: 55,

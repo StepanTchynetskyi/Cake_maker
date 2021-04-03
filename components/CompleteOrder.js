@@ -11,12 +11,20 @@ import {
 const CompleteOrder = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 48, color: "#BDBDBD", fontWeight: "700" }}>
-        Thank You For
-      </Text>
-      <Text style={{ fontSize: 48, color: "#BDBDBD", fontWeight: "700" }}>
-        Your Order
-      </Text>
+      <View style={{ position: "absolute", alignItems: "center" }}>
+        <Text
+          style={{
+            fontSize: 48,
+            color: "#BDBDBD",
+            fontWeight: "700",
+          }}
+        >
+          Thank You For
+        </Text>
+        <Text style={{ fontSize: 48, color: "#BDBDBD", fontWeight: "700" }}>
+          Your Order
+        </Text>
+      </View>
       <TouchableOpacity
         style={styles.logbtn}
         onPress={() => navigation.navigate("ResultPage")}
@@ -42,6 +50,8 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 25,
     padding: 20,
+    position: "absolute",
+    bottom: 50,
   },
 });
 

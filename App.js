@@ -9,7 +9,7 @@ import Register from "./components/Register";
 import ChooseOne from "./components/ChooseOne";
 import ResultPage from "./components/ResultPage";
 import CompleteOrder from "./components/CompleteOrder";
-import firebase from "firebase";
+
 const Stack = createStackNavigator();
 
 export default function App() {
@@ -17,7 +17,11 @@ export default function App() {
     <NavigationContainer>
       <StatusBar translucent={false} />
       <Stack.Navigator>
-        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{ headerTintColor: "#BDBDBD" }}
+        />
         <Stack.Screen
           name="MainMenu"
           component={MainMenu}
@@ -38,7 +42,11 @@ export default function App() {
           component={CompleteOrder}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="Register" component={Register} />
+        <Stack.Screen
+          name="Register"
+          component={Register}
+          options={{ headerTintColor: "#BDBDBD" }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

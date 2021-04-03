@@ -8,12 +8,26 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import MainMenu from "./MainMenu";
-
 const Register = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.mainView}>
+        <View
+          style={{
+            width: "100%",
+            textAlign: "left",
+          }}
+        >
+          <Text style={styles.label}>Full Name</Text>
+        </View>
+        <TextInput
+          style={styles.input}
+          //   onChangeText={onChangeNumber}
+          //   value={number}
+          placeholder="John Brown"
+          keyboardType="default"
+          textAlign="center"
+        />
         <View
           style={{
             width: "100%",
@@ -85,7 +99,7 @@ const Register = ({ navigation }) => {
           textAlign="center"
         />
         <TouchableOpacity
-          style={{ marginTop: 20 }}
+          style={{ marginTop: 40, bottom: 0 }}
           onPress={() => navigation.navigate("MainMenu")}
         >
           <View style={styles.logbtn}>
@@ -126,7 +140,7 @@ const styles = StyleSheet.create({
   label: {
     color: "#C5C4C4",
     fontSize: 14,
-    marginTop: 15,
+    marginTop: 10,
     marginBottom: 9,
     fontWeight: "700",
     textAlign: "left",
@@ -144,7 +158,6 @@ const styles = StyleSheet.create({
     height: 50,
     width: 310,
     fontSize: 16,
-    marginBottom: 50,
   },
 });
 
