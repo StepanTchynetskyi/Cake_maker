@@ -40,12 +40,31 @@ const ResultPage = ({ navigation }) => {
             style={styles.smallImg}
             source={{
               uri:
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q0dm8AEL3FCjCiTSJ---A6qS4hElX9bBrg&usqp=CAU",
+                "https://i.pinimg.com/564x/43/42/44/434244e1c2e559580d6979d773d288cc.jpg",
             }}
           />
           <Text style={{ fontSize: 20, color: "#BDBDBD" }}>
-            Chocolate Cupcake{" "}
+            Vanilla Cupcake{" "}
           </Text>
+        </View>
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "flex-start",
+            width: "100%",
+            alignItems: "center",
+            marginTop: 15,
+            marginLeft: 17,
+          }}
+        >
+          <Image
+            style={styles.smallImg}
+            source={{
+              uri:
+                "https://i.pinimg.com/564x/a0/e2/82/a0e282cdb549d928d5c51bae435ad1fd.jpg",
+            }}
+          />
+          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Vanilla Base</Text>
         </View>
         <View
           style={{
@@ -64,7 +83,7 @@ const ResultPage = ({ navigation }) => {
                 "https://i.pinimg.com/564x/8b/75/59/8b755920031191cb3d2715ae688f503c.jpg",
             }}
           />
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Blueberries</Text>
+          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Blueberry Jam</Text>
         </View>
         <View
           style={{
@@ -83,7 +102,7 @@ const ResultPage = ({ navigation }) => {
                 "https://i.pinimg.com/564x/e0/2f/44/e02f44e2cb85f3f1dc8d64f74191f272.jpg",
             }}
           />
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Nuts</Text>
+          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Chopped Nuts</Text>
         </View>
         <View
           style={{
@@ -99,10 +118,10 @@ const ResultPage = ({ navigation }) => {
             style={styles.smallImg}
             source={{
               uri:
-                "https://i.pinimg.com/564x/ce/f1/3d/cef13d17acf9f4123fbcf95d90b63c8a.jpg",
+                "https://i.pinimg.com/564x/26/74/78/26747859d57c08b6f5e216134d064fe2.jpg",
             }}
           />
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Milk Chocolate</Text>
+          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Vanilla Cream</Text>
         </View>
         <View
           style={{
@@ -118,31 +137,10 @@ const ResultPage = ({ navigation }) => {
             style={styles.smallImg}
             source={{
               uri:
-                "https://i.pinimg.com/564x/16/d0/60/16d06047141312a4a71bcc8ccf37e129.jpg",
+                "https://i.pinimg.com/564x/d8/c5/c1/d8c5c1c2384ca05f40be8b7f948131bb.jpg",
             }}
           />
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>
-            Black Chocolate
-          </Text>
-        </View>
-        <View
-          style={{
-            flexDirection: "row",
-            justifyContent: "flex-start",
-            width: "100%",
-            alignItems: "center",
-            marginTop: 15,
-            marginLeft: 17,
-          }}
-        >
-          <Image
-            style={styles.smallImg}
-            source={{
-              uri:
-                "https://i.pinimg.com/564x/1c/69/69/1c696915a5877092b69136cece8548b1.jpg",
-            }}
-          />
-          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Condensed Milk</Text>
+          <Text style={{ fontSize: 20, color: "#BDBDBD" }}>Sprinkles</Text>
         </View>
       </View>
       <View
