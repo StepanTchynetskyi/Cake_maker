@@ -8,13 +8,11 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import MainMenu from "./MainMenu";
-
 const ChooseOne = ({ navigation }) => {
   const arrowBack = "<";
   return (
     <View style={styles.container}>
-      <TouchableOpacity
+      {/* <TouchableOpacity
         onPress={() => navigation.navigate("MainMenu")}
         style={{
           marginTop: 30,
@@ -48,7 +46,7 @@ const ChooseOne = ({ navigation }) => {
           </View>
           Menu
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
       <View style={styles.mainContainer}>
         <Text style={styles.mainLabel}>Choose cupcake base</Text>
         <Image
@@ -136,6 +134,9 @@ const ChooseOne = ({ navigation }) => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#fff",
+    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
   },
   mainContainer: {
     alignItems: "center",

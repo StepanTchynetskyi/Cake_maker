@@ -9,6 +9,7 @@ import Register from "./components/Register";
 import ChooseOne from "./components/ChooseOne";
 import ResultPage from "./components/ResultPage";
 import CompleteOrder from "./components/CompleteOrder";
+import Order from "./components/Order";
 
 const Stack = createStackNavigator();
 
@@ -35,6 +36,11 @@ export default function App() {
         <Stack.Screen
           name="ResultPage"
           component={ResultPage}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Order"
+          component={Order}
           options={{ headerShown: false }}
         />
         <Stack.Screen

@@ -1,11 +1,5 @@
 import React, { UseState } from "react";
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  TouchableOpacity,
-} from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
 const ResultPage = ({ navigation }) => {
   return (
@@ -180,7 +174,7 @@ const ResultPage = ({ navigation }) => {
       <View style={{ alignItems: "center", justifyContent: "center" }}>
         <TouchableOpacity
           style={styles.logbtn}
-          onPress={() => navigation.navigate("CompleteOrder")}
+          onPress={() => navigation.navigate("Order")}
         >
           <Text style={{ color: "#fff", fontSize: 20 }}>Confirm</Text>
         </TouchableOpacity>
@@ -216,7 +210,7 @@ const styles = StyleSheet.create({
   },
   logbtn: {
     backgroundColor: "#000",
-    width: 250,
+    width: 310,
     borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",

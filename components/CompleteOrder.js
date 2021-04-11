@@ -27,7 +27,7 @@ const CompleteOrder = ({ navigation }) => {
       </View>
       <TouchableOpacity
         style={styles.logbtn}
-        onPress={() => navigation.navigate("ResultPage")}
+        onPress={() => navigation.navigate("MainMenu")}
       >
         <Text style={{ color: "#fff", fontSize: 20 }}>Main Menu</Text>
       </TouchableOpacity>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 25,
-    padding: 20,
+    padding: 10,
     position: "absolute",
     bottom: 50,
   },
