@@ -9,6 +9,12 @@ import {
 } from "react-native";
 
 const Register = ({ navigation }) => {
+  const [fullName, setFullName] = useState();
+  const [phone, setPhone] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [confirmPassword, setConfirmPassword] = useState();
+
   return (
     <View style={styles.container}>
       <View style={styles.mainView}>
@@ -22,7 +28,7 @@ const Register = ({ navigation }) => {
         </View>
         <TextInput
           style={styles.input}
-          //   onChangeText={onChangeNumber}
+          onChangeText={(userFullName) => setFullName(userFullName)}
           //   value={number}
           placeholder="John Brown"
           keyboardType="default"
@@ -38,7 +44,7 @@ const Register = ({ navigation }) => {
         </View>
         <TextInput
           style={styles.input}
-          //   onChangeText={onChangeNumber}
+          onChangeText={(userPhone) => setPhone(userPhone)}
           //   value={number}
           placeholder="+38( ___)___-__-__ "
           keyboardType="numeric"
@@ -54,7 +60,7 @@ const Register = ({ navigation }) => {
         </View>
         <TextInput
           style={styles.input}
-          //   onChangeText={onChangeNumber}
+          onChangeText={(userEmail) => setEmail(userEmail)}
           //   value={number}
           placeholder="cakeuser@gmail.com"
           keyboardType="default"

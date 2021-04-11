@@ -8,8 +8,6 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-import MainMenu from "./MainMenu";
-
 const Login = ({ navigation }) => {
   return (
     <View style={styles.container}>
@@ -39,13 +37,13 @@ const Login = ({ navigation }) => {
         >
           Please log in to your account to continue work in app
         </Text>
-        <Text style={styles.label}>Phone number</Text>
+        <Text style={styles.label}>Email</Text>
         <TextInput
           style={styles.input}
           //   onChangeText={onChangeNumber}
           //   value={number}
-          placeholder="+38( ___)___-__-__ "
-          keyboardType="numeric"
+          placeholder="cakeuser@gmail.com"
+          keyboardType="default"
           textAlign="center"
         />
         <Text style={styles.label}>Password</Text>

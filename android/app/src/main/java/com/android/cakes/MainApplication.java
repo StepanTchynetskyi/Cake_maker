@@ -23,6 +23,9 @@ import expo.modules.permissions.PermissionsPackage;
 import expo.modules.filesystem.FileSystemPackage;
 import expo.modules.updates.UpdatesController;
 
+import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+
 import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 import java.util.List;
@@ -41,8 +44,14 @@ public class MainApplication extends Application implements ReactApplication {
 
     @Override
     protected List<ReactPackage> getPackages() {
+      @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
+      packeges.add(new MainReactPackage())
+      packeges.add(new ReactNativeFirebaseDynamicLinksPackage())
+      packages.add(new ReactNativeFirebaseAppPackage());
+      packages.add(new RNFirebaseAuthPackage());
+      
       return packages;
     }
 

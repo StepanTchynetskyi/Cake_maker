@@ -9,10 +9,10 @@ import {
 
 const Order = ({ navigation }) => {
   const [toggleStyle, setToggleStyle] = useState({
-    selfMethodStyle: { backgroundColor: "#fff" },
-    selfMethodTextStyle: { color: "#C5C4C4" },
-    deliveryMethodStyle: { backgroundColor: "#000" },
-    deliveryMethodTextStyle: { color: "#fff" },
+    selfMethodStyle: { backgroundColor: "#000" },
+    selfMethodTextStyle: { color: "#fff" },
+    deliveryMethodStyle: { backgroundColor: "#fff" },
+    deliveryMethodTextStyle: { color: "#C5C4C4" },
     showSelf: true,
     showDelivery: false,
   });
@@ -22,20 +22,20 @@ const Order = ({ navigation }) => {
   //   });
   const handleSelfMethod = () => {
     setToggleStyle({
-      selfMethodStyle: { backgroundColor: "#fff" },
-      selfMethodTextStyle: { color: "#C5C4C4" },
-      deliveryMethodStyle: { backgroundColor: "#000" },
-      deliveryMethodTextStyle: { color: "#fff" },
+      selfMethodStyle: { backgroundColor: "#000" },
+      selfMethodTextStyle: { color: "#fff" },
+      deliveryMethodStyle: { backgroundColor: "#fff" },
+      deliveryMethodTextStyle: { color: "#C5C4C4" },
       showSelf: true,
       showDelivery: false,
     });
   };
   const handleDeliveryMethod = () => {
     setToggleStyle({
-      selfMethodStyle: { backgroundColor: "#000" },
-      selfMethodTextStyle: { color: "#fff" },
-      deliveryMethodStyle: { backgroundColor: "#fff" },
-      deliveryMethodTextStyle: { color: "#C5C4C4" },
+      selfMethodStyle: { backgroundColor: "#fff" },
+      selfMethodTextStyle: { color: "#C5C4C4" },
+      deliveryMethodStyle: { backgroundColor: "#000" },
+      deliveryMethodTextStyle: { color: "#fff" },
       showSelf: false,
       showDelivery: true,
     });
