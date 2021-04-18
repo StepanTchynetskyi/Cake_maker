@@ -72,7 +72,7 @@ const MainMenu = ({ navigation }) => {
           <View style={styles.category}>
             <MenuItem
               navigation={navigation}
-              page="CupCake"
+              page="ChoosePastry"
               name="Pastry"
               caption="Caption in here for this mini-card"
               imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTkplYO9UJ4s87oMUEjE1-68JbcfMGfU1zkA&usqp=CAU"

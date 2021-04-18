@@ -11,6 +11,7 @@ import ChooseCupCakeCream from "./Cupcake/CupCakeCream";
 import ChooseCupCakeDecorations from "./Cupcake/CupCakeDecorations";
 import ChoosePieMainFlavour from "./Pie/PieMainFlavour";
 import ChoosePieAdditionalFlavour from "./Pie/PieAdditionalFlavour";
+import ChoosePastry from "./Pastry/Pastry";
 
 import ResultPage from "./ResultPage";
 import CompleteOrder from "./CompleteOrder";
@@ -58,6 +59,11 @@ const AppStack = ({ navigation }) => {
       <Stack.Screen
         name="ChoosePieAdditionalFlavour"
         component={ChoosePieAdditionalFlavour}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="ChoosePastry"
+        component={ChoosePastry}
         options={{ headerShown: false }}
       />
       <Stack.Screen
