@@ -97,7 +97,7 @@ const ChooseCupCakeBase = ({ navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.logbtn, { marginLeft: 15 }]}
-            onPress={() => navigation.navigate("ResultPage")}
+            onPress={() => navigation.navigate("CupCakeFilling")}
           >
             <Text style={styles.textBtn}>Next</Text>
           </TouchableOpacity>

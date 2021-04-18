@@ -8,56 +8,21 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const ChooseCupCakeBase = ({ navigation }) => {
+const ChooseCupCakeDecorations = ({ navigation }) => {
   const arrowBack = "<";
   return (
     <View style={styles.container}>
-      {/* <TouchableOpacity
-        onPress={() => navigation.navigate("MainMenu")}
-        style={{
-          marginTop: 30,
-          textAlign: "left",
-          verticalAlign: "middle",
-          width: "30%",
-          justifyContent: "center",
-          height: "3%",
-        }}
-      >
-        <Text
-          style={{
-            fontSize: 22,
-            paddingLeft: 20,
-            fontWeight: "700",
-            color: "#BDBDBD",
-          }}
-        >
-          <Text
-            style={{
-              fontSize: 26,
-              color: "#BDBDBD",
-              paddingRight: 20,
-              fontWeight: "700",
-            }}
-          >
-            {arrowBack}
-          </Text>
-          <View style={{ width: "3%" }}>
-            <Text> </Text>
-          </View>
-          Menu
-        </Text>
-      </TouchableOpacity> */}
       <View style={styles.mainContainer}>
-        <Text style={styles.mainLabel}>Choose cupcake base</Text>
+        <Text style={styles.mainLabel}>Choose cupcake decoration</Text>
         <Image
           style={styles.mainImage}
           source={{
             uri:
-              "https://i.pinimg.com/564x/ba/e1/00/bae100fd19d0f3b46bcf9b505384557f.jpg",
+              "https://i.pinimg.com/564x/d6/b8/85/d6b8859894470e7b7c0e854f1dba7283.jpg",
           }}
         />
         <Text style={{ color: "#BDBDBD", fontSize: 28, marginTop: 5 }}>
-          Chocolate dough
+          Fruits
         </Text>
         <View
           style={{
@@ -69,14 +34,14 @@ const ChooseCupCakeBase = ({ navigation }) => {
             style={[styles.smallImg, { marginRight: 5 }]}
             source={{
               uri:
-                "https://i.pinimg.com/564x/a0/e2/82/a0e282cdb549d928d5c51bae435ad1fd.jpg",
+                "https://i.pinimg.com/564x/d8/c5/c1/d8c5c1c2384ca05f40be8b7f948131bb.jpg",
             }}
           />
           <Image
             style={[styles.smallImg, { marginLeft: 5 }]}
             source={{
               uri:
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q0dm8AEL3FCjCiTSJ---A6qS4hElX9bBrg&usqp=CAU",
+                "https://i.pinimg.com/564x/d6/b8/85/d6b8859894470e7b7c0e854f1dba7283.jpg",
             }}
           />
         </View>
@@ -87,10 +52,10 @@ const ChooseCupCakeBase = ({ navigation }) => {
           }}
         >
           <TouchableOpacity
-            disabled={true}
+            onPress={() => navigation.navigate("ChooseCupCakeCream")}
             style={[
               styles.logbtn,
-              { marginRight: 15, backgroundColor: "#dddddd" },
+              { marginRight: 15, backgroundColor: "#000" },
             ]}
           >
             <Text style={styles.textBtn}>Back</Text>
@@ -110,11 +75,11 @@ const ChooseCupCakeBase = ({ navigation }) => {
             width: "80%",
           }}
         >
-          <View style={[styles.circle, { backgroundColor: "#000" }]}>
-            <Text style={{ color: "#fff", fontSize: 20 }}>1</Text>
+          <View style={styles.circle}>
+            <Text style={{ color: "#000", fontSize: 20 }}>1</Text>
           </View>
           <View style={styles.circle}>
-            <Text style={{ fontSize: 20 }}>2</Text>
+            <Text style={{ color: "#000", fontSize: 20 }}>2</Text>
           </View>
           <View style={styles.circle}>
             <Text style={{ fontSize: 20 }}>3</Text>
@@ -122,8 +87,8 @@ const ChooseCupCakeBase = ({ navigation }) => {
           <View style={styles.circle}>
             <Text style={{ fontSize: 20 }}>4</Text>
           </View>
-          <View style={styles.circle}>
-            <Text style={{ fontSize: 20 }}>5</Text>
+          <View style={[styles.circle, { backgroundColor: "#000" }]}>
+            <Text style={{ color: "#fff", fontSize: 20 }}>5</Text>
           </View>
         </View>
       </View>
@@ -190,4 +155,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ChooseCupCakeBase;
+export default ChooseCupCakeDecorations;

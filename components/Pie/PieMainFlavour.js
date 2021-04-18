@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-const ChooseCupCakeBase = ({ navigation }) => {
+const ChoosePieMainFlavour = ({ navigation }) => {
   const arrowBack = "<";
   return (
     <View style={styles.container}>
@@ -48,16 +48,16 @@ const ChooseCupCakeBase = ({ navigation }) => {
         </Text>
       </TouchableOpacity> */}
       <View style={styles.mainContainer}>
-        <Text style={styles.mainLabel}>Choose cupcake base</Text>
+        <Text style={styles.mainLabel}>Choose pie main flavour</Text>
         <Image
           style={styles.mainImage}
           source={{
             uri:
-              "https://i.pinimg.com/564x/ba/e1/00/bae100fd19d0f3b46bcf9b505384557f.jpg",
+              "https://frenchgardenhouse.com/wp/wp-content/uploads/2017/11/French-Crumble-Mini-Apple-Pies-in-Foolproof-Pie-Crust-green-apples-in-a-wood-bowl.jpg",
           }}
         />
         <Text style={{ color: "#BDBDBD", fontSize: 28, marginTop: 5 }}>
-          Chocolate dough
+          Apple
         </Text>
         <View
           style={{
@@ -69,14 +69,14 @@ const ChooseCupCakeBase = ({ navigation }) => {
             style={[styles.smallImg, { marginRight: 5 }]}
             source={{
               uri:
-                "https://i.pinimg.com/564x/a0/e2/82/a0e282cdb549d928d5c51bae435ad1fd.jpg",
+                "https://i.pinimg.com/564x/a9/87/37/a98737584adda521de1b63cb84f895e3.jpg",
             }}
           />
           <Image
             style={[styles.smallImg, { marginLeft: 5 }]}
             source={{
               uri:
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7q0dm8AEL3FCjCiTSJ---A6qS4hElX9bBrg&usqp=CAU",
+                "https://i.pinimg.com/564x/f9/e4/6e/f9e46e64bb94713ff04957d72630ba29.jpg",
             }}
           />
         </View>
@@ -97,7 +97,7 @@ const ChooseCupCakeBase = ({ navigation }) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.logbtn, { marginLeft: 15 }]}
-            onPress={() => navigation.navigate("ResultPage")}
+            onPress={() => navigation.navigate("ChoosePieAdditionalFlavour")}
           >
             <Text style={styles.textBtn}>Next</Text>
           </TouchableOpacity>
@@ -107,7 +107,7 @@ const ChooseCupCakeBase = ({ navigation }) => {
             flexDirection: "row",
             marginTop: 23,
             justifyContent: "space-around",
-            width: "80%",
+            width: "40%",
           }}
         >
           <View style={[styles.circle, { backgroundColor: "#000" }]}>
@@ -115,15 +115,6 @@ const ChooseCupCakeBase = ({ navigation }) => {
           </View>
           <View style={styles.circle}>
             <Text style={{ fontSize: 20 }}>2</Text>
-          </View>
-          <View style={styles.circle}>
-            <Text style={{ fontSize: 20 }}>3</Text>
-          </View>
-          <View style={styles.circle}>
-            <Text style={{ fontSize: 20 }}>4</Text>
-          </View>
-          <View style={styles.circle}>
-            <Text style={{ fontSize: 20 }}>5</Text>
           </View>
         </View>
       </View>
@@ -190,4 +181,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ChooseCupCakeBase;
+export default ChoosePieMainFlavour;

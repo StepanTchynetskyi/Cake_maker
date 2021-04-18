@@ -1,15 +1,10 @@
 import "react-native-gesture-handler";
-import React, { useContext, useState, useEffect } from "react";
-import { StyleSheet, Text, View, StatusBar } from "react-native";
-import Routes from "./components/Routes";
-import { AuthProvider } from "./components/AuthProvider";
+import React from "react";
+import { StyleSheet } from "react-native";
+import Providers from "./components";
 
 export default function App() {
-  return (
-    <AuthProvider>
-      <Routes />
-    </AuthProvider>
-  );
+  return <Providers />;
 }
 
 const styles = StyleSheet.create({
